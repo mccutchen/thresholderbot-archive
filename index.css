@@ -51,7 +51,7 @@ table {
 }
 
 /* ============================================================================
- * base styles
+ * app styles
  * ========================================================================= */
 
 * {
@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     margin: 1em 0;
     padding: 0;
+    text-align: center;
 }
 
 h1 { font-size: 3.5em; }
@@ -79,8 +80,7 @@ h2 { font-size: 2.1em; }
 h3 { font-size: 1.26em; }
 
 header {
-    border-bottom: 1px dotted rgb(215, 85, 53);
-    padding-bottom: 2rem;
+    text-align: center;
     margin-bottom: 1.5rem
 }
 header::after {
@@ -93,6 +93,16 @@ header h1, header h2 {
 }
 header h2 {
     font-weight: 700;
+}
+
+.stats {
+    margin: 2rem 0 3rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(215, 85, 53);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: center;
 }
 
 b, strong {
@@ -111,18 +121,12 @@ a {
 p {
   line-height: 1.5;
   margin: 1rem 0;
-  text-align: left;
 }
-
-/* ============================================================================
- * app styles
- * ========================================================================= */
 
 .container {
   width: 100%;
   max-width: 40rem;
   margin: 0 auto 2rem auto;
-  text-align: center;
 }
 
 .logo {
