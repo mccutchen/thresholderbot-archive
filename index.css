@@ -1,0 +1,161 @@
+/* ============================================================================
+ * sass variables
+ * ============================================================================
+ *     $blue: #4c6074;
+ *     $lightGray: #efefef;
+ *     $red: rgb(215, 85, 53); // == #d75535
+ *     $lightRed: lighten($red, 40%);
+============================================================================ */
+
+/* ============================================================================
+ * reset css
+ * ========================================================================= */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ============================================================================
+ * base styles
+ * ========================================================================= */
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+$header-scale: 0.6;
+$header-max-size: 3.5em;
+h1 { font-size: $header-max-size; }
+h2 { font-size: $header-max-size * $header-scale; }
+h3 { font-size: $header-max-size * $header-scale * $header-scale; }
+h4 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale; }
+h5 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale * $header-scale; }
+h6 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale * $header-scale * $header-scale; }
+*/
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.1em; }
+h3 { font-size: 1.26em; }
+h4 { font-size: 0.756em; }
+h5 { font-size: 0.4536em; }
+h6 { font-size: 0.27216em; }
+
+header {
+    border-bottom: 1px solid rgb(215, 85, 53);
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem
+}
+header::after {
+    content: '🪦';
+    font-size: 3.5em;
+    display: block;
+}
+header h1, header h2 {
+    margin: 1.5rem 0;
+}
+header h1 {
+    
+}
+header h2 {
+    /* font-style: italic; */
+}
+
+b, strong {
+  font-weight: 700;
+}
+i, em {
+  font-style: italic;
+}
+
+a {
+  color: rgb(215, 85, 53);
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+p {
+  line-height: 1.5;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+/* ============================================================================
+ * app styles
+ * ========================================================================= */
+
+.container {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.logo {
+  color: rgb(215, 85, 53);
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
