@@ -1,13 +1,4 @@
 /* ============================================================================
- * sass variables
- * ============================================================================
- *     $blue: #4c6074;
- *     $lightGray: #efefef;
- *     $red: rgb(215, 85, 53); // == #d75535
- *     $lightRed: lighten($red, 40%);
-============================================================================ */
-
-/* ============================================================================
  * reset css
  * ========================================================================= */
 
@@ -83,25 +74,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-/*
-$header-scale: 0.6;
-$header-max-size: 3.5em;
-h1 { font-size: $header-max-size; }
-h2 { font-size: $header-max-size * $header-scale; }
-h3 { font-size: $header-max-size * $header-scale * $header-scale; }
-h4 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale; }
-h5 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale * $header-scale; }
-h6 { font-size: $header-max-size * $header-scale * $header-scale * $header-scale * $header-scale * $header-scale; }
-*/
 h1 { font-size: 3.5em; }
 h2 { font-size: 2.1em; }
 h3 { font-size: 1.26em; }
-h4 { font-size: 0.756em; }
-h5 { font-size: 0.4536em; }
-h6 { font-size: 0.27216em; }
 
 header {
-    border-bottom: 1px solid rgb(215, 85, 53);
+    border-bottom: 1px dotted rgb(215, 85, 53);
     padding-bottom: 2rem;
     margin-bottom: 1.5rem
 }
@@ -113,11 +91,8 @@ header::after {
 header h1, header h2 {
     margin: 1.5rem 0;
 }
-header h1 {
-    
-}
 header h2 {
-    /* font-style: italic; */
+    font-weight: 700;
 }
 
 b, strong {
@@ -128,7 +103,7 @@ i, em {
 }
 
 a {
-  color: rgb(215, 85, 53);
+  color: #2075c7;
   text-decoration: none;
   border-bottom: 1px dotted #ccc;
 }
